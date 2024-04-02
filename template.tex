@@ -1,0 +1,135 @@
+\documentclass{report}
+
+\input{preamble}
+\input{macros}
+\input{letterfonts}
+\usepackage{pgfplots}
+\usepackage{xcolor}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{tikz}
+\tikzstyle{startstop} = [rectangle, rounded corners, minimum width=3cm, minimum height=1cm, text centered, draw=black, fill=red!30]
+\tikzstyle{process} = [rectangle, minimum width=3cm, minimum height=1cm, text centered, draw=black, fill=orange!30]
+\tikzstyle{decision} = [diamond, minimum width=3cm, minimum height=1cm, text centered, draw=black, fill=green!30]
+\tikzstyle{arrow} = [thick,->,>=stealth]
+\title{\Huge{BENG 189}\\University of California San Diego}
+\author{\huge{Jasmeet Bhatia}}
+\date{}
+\begin{document}
+
+\maketitle
+\newpage% or \cleardoublepage
+% \pdfbookmark[<level>]{<title>}{<dest>}
+\pdfbookmark[section]{\contentsname}{toc}
+\tableofcontents
+\pagebreak
+
+\chapter{Lecture 1: Renal System}
+\section{Renal System Part 1:}
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.4\textwidth]{img1.png}
+  \caption{Anatomy of Kidneys, showing efferent and afferent blood vessesl}
+\end{figure}
+The kidneys sit below. They have two artery branches that feed oxygenated blood to the kidneys. Deoxygenated blood returns back to the \underline{Inferior Vena Cava}. The kidneys filter nutrition which passes through the \underline{ureter} which leads to the bladder. The kidneys sit below the ribs
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.4\textwidth]{img2.png}
+  \caption{Specific anatomy of the kidney. This lecture focused primarily on the Medulla and Bowman's Capsule, discussed later this lecture}
+\end{figure}
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.4\textwidth]{img3.png}
+  \caption{Blood Flow of Urinary Tract}
+\end{figure}
+\section{Steps of Blood Flow}
+\begin{itemize}
+  \item Initial: Blood arrives via the areriole \item 1. Kidneys dump solutes and water in to the urinary tract
+  \item 2. A delicate dance occurs between reabsorbing things and letting things being released to the urine
+    \begin{itemize}
+      \item Ex: Retain items such as glucose and amino acids
+    \end{itemize}
+  \item 3. Excrete some things
+    \begin{itemize}
+      \item Ex: \underline{Drugs, urea}, etc
+    \end{itemize}
+  \item 4. Items go towards the \underline{Bladder}
+\end{itemize}
+\dfn{Urinary Excretion}{
+Excretion = Filtration - Reabsorption + Secretion
+}
+\section{How Different Solutes are Treated Differently}
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.4\textwidth]{img4.png}
+  \caption{Flow of Solutes through the urinary system. The loopy of Henley is key to allowing the concentration of solutes}
+\end{figure}
+\begin{verbatim}
+Glucose and Amino Acids are reabsorbed right away at 100% performance. 
+Optimal Balance $\rightarrow$ excreting "bad" substances effeciently may \underline{require, a 
+little loss of water.}
+Dump blood flow into the Bowman's capsule
+The textbook starts at the Glomerulus (G), travels to the Afferent arteriole (AA).
+Leaky capillaries lose some water and small molecules. 
+Proteins are too large to leave and thus they stay. This creates an osmotic pressure against 
+filtering out water.
+blood pressure, can lead to multi-organ failure
+\end{verbatim}
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.4\textwidth]{img5.png}
+  \caption{There exists $10^6$ nephrons, connected in parallel}
+\end{figure}
+  \item Proximal Tubulue
+  \item this is your plasma without proteins
+  \item Na reabsorption $\rightarrow$ water goes too
+  \item This functions to decrease the volume of urine
+  \item Loop of Henle $\rightarrow$ Na concentration changes
+  \item Ascending Limb $\rightarrow$ Metabolically Active, Impermeable to $H_2O$, Permeable to $Na^+$  
+  \item $Na^+$ is pumped from tubule $\rightarrow$ intersititium $\rightarrow$ leads to concentration gradient $\rightarrow$ Descending Loop of Henle
+  \item Descending Loop of Henle $\rightarrow$ proggressively increasing [$Na^+$]
+  \item Peritubule capillaries $\rightarrow$ pick up/ return fluid to interstitial vein
+  \begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.7\textwidth]{img7.png}
+    \caption{Concentration of Urine}
+  \end{figure}
+  Distil tube collect duct are \underline{imperm} to $H_2O$
+  Distil tube collect duct are  \underline{perm} to $H_2O$ 
+  fluid at the of LH of it is excreted large vlume dilute -> low concentration
+  water leave as it descends smaller concentretated volume
+
+  \ex{Diseases}{
+
+  }
+
+  \section{Dynamics of $Na^+$ and $H_2O$ Transport}
+  \begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.4\textwidth]{img6.png}
+    \caption{}
+  \end{figure}
+  \dfn{Flow Rate}{
+  let Q(x) be the flower rate past x
+  Assume in steady state
+  let f(x) = the flow through the walls per unit length at x
+  \begin{center}
+  \\ \therefore Q(a) = Q(b) + \int_{a}^{b}{f$H_2O$(x)\,dx }
+  \\ \therefore 0 = \frac{\partial Q(b)}{\partial x} + $f_{H_2O}(b)$
+  \\ \therefore 0 = \frac{\partial Q}{\partial x} + $f_{H_2O}(x)$
+  \\ Now consider the concentration of $Na^+$ and its concentration, c(x)
+  \\ The amount of $Na^+$ transport along the tubule by flow as Q(x) \dot c(x) 
+  \\ While the flow through the walls, $f_{Na^+}$
+  \\ \[ Q(a)c(a) = Q(b)c(b) + \int_{a}^{b}{f_{Na^+}\,dx}
+  \\ \therefore 0 = \frac{\partial}{\partial x} (Q(b)c(b)) + f_{Na^+}(b)
+  \\ \therefore 0 = \frac{\partial}{\partial x} (Q(c)) + f_{Na^+}(x)
+  \\ Q(a)c(a) = Q(b)c(b) + \int_{a}^{b}{f_{Na^+}\,dx} \]
+  \end{center}
+  }
+  \goal{Model of Loop of Henle}{
+  Describe a salty meal versus drinking water 
+  }
+\dfn{Shannon's Definition of Information (h)}{Let an ensemble, X, have input ($x, A_x, P_x$) where x is a random variable, $A_x$ is a set of possible outcomes ($a_1,a_2,a_3, ... a_1$) and where $P_x$ is the set of possibilities $P_x = (P_1,P_2, ... P_i)$ such that P(x=$a_i$) = $P_i$, we define Shannon's information content as the following: \[ x = a_i h(x=a_i) = log_2 \] 
+\[ \therefore h(x = a_i) = log_2 \frac{1}{P(x=a_i)}  \]}
+
+\end{document}
